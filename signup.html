@@ -1,70 +1,77 @@
 <html lang="en-us">
+
     <head>
+
+        <link rel="stylesheet" type="text/css" href="style-siginup.css">
+        
         <title> Sign up • Mygram </title>
-        <link rel="icon" href="hosna.gif" type="img/gif" sizes="16x16"/>
-       
+        
+        <link rel="icon" 
+        href="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSwQfflluGKvj4qSnirF93qwMaQoPHCE7EUZiXKsdpondA0C1Vv" 
+        type="img/png" sizes="16x16"/>
+        
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    
+        <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css">
     </head>
-    <body>
-        <div style="border:darkred">
-            <h1  style="font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif">Mygram</h1>
-            <p  style="font-family:'Segoe UI', Tahoma, Geneva, Verdana, sans-serif" style="font-size: 20%"> sign up to chat with your freinds!</p>
+
+    <body class="body">
+        <div class="big-d">
+            <h1 class="h1">Mygram</h1>
+            <p class="p1"> sign up to chat with your freinds!</p>
          
          <form action="   " method="POST" autocomplete="on">
-             <div> 
-                <br/>
-                <input type="email" name=" email " placeholder=" Email" required />
+             <div class="d1">
+                
+                <input class="in1" type="email" name=" email " placeholder=" Email" required />
+                <i class="material-icons">email</i>
              </div>
 
-             <!--<div>
-                  <input type="radio" name="gender" value="male"/>Male
-                  <input type="radio" name="gender" value="female"/>Female
-                  <input type="radio" name="gender" value="other"/>Other
-             </div>-->
-
-            <!-- <div>
-                  <select name="country">
-                     <option >..........choose one.........</option>
-                     <option value="Iran">Iran</option>
-                     <option value="Iraq">Iraq</option>
-                     <option value="United state">United state</option>
-                     <option value="English">English</option>
-                     <option value="Brezil">Brezil</option>
-                     <option value="Netherland">Netherland</option>
-                  </select>
-             </div>-->
-
-             <div>
-                <br/>
-                <input type="text" name="Username" placeholder="Username" required/>
+             <div class="d1">
+                
+                <input class="in1" type="text" name="Username" placeholder="Username" required/>
+                <span class="glyphicon glyphicon-user"></span>
              </div>
 
-             <div>
-                <br/>
-                <input type="password" name="Password " placeholder="Password" required />
+             <div class="d1">
+                
+                <input class="in1" type="password" name="Password " placeholder="Password" required />
+                <i class="fa fa-lock"></i>
              </div>
             
-             <div>
-                <br/>
-                <input type="password" name=" Enter your Password Again " placeholder="Enter your Password Again" required/>
+             <div class="d1" >
+                
+                <input class="in1" type="password" name=" Enter your Password Again " placeholder="Enter your Password Again" required/>
+                <i class="fa fa-lock"></i>
              </div>
 
-             <div>
-               <br/>
-               <button style="background-color:blanchedalmond"> Sign up </button>
+             <div class="d1">
+               
+               <!--how i can chang the size of the button-->
+               <button class="but1" > Sign up </button>
              </div>
-         </form>
-        </div>
-        <!-- i want to use link without being blue and havig  undeline -->
-        <p >By sign up you agree our <br/><a href="https://www.google.com">Terms</a>
-        , <a href="https://www.google.com">Data Policy</a> and <br/><a href="https://www.google.com">Cookies Policy</a> .</p> 
-        <p > Have an account? <a href="https://www.loginmygram.com">Log in</a></p>
-        <p>Get the app. </p>
+
+             <p class="p2">By sign up you agree our <br/><a class="a1" href="https://www.google.com">Terms</a>
+                , <a class="a1" href="https://www.google.com">Data Policy</a> and <br/><a class="a1" href="https://www.google.com">Cookies Policy</a> .</p> 
         
-       
-        <input type="image" src="appstore.gif" alt="Submit" width="100" height="50" />
-        <input type="image" src="playstore.gif" alt="Submit" width="100" height="50" />
+           </form>
+        </div>
+        <!-- i want to use link without being blue and havig  undeline  => so i add a code on the head at
+        style part it omitted the hole links underline but it just chang the login color why it do like that?
+        i can chang the color of the links one by one by using style in the start <a> -->
 
-
+        <div class="small-d">
+            <p > Have an account? <a class="a2" href="https://www.loginmygram.com">Log in</a></p>
+        </div>
+        
+        <div class="end-d">
+        <p>Get the app. </p>
+        <input type="image" src="data:image/png;base64,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" alt="Submit" width="100" height="32" />
+        <input type="image" src="data:image/png;base64,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" alt="Submit" width="100" height="32" />
+        </div>
+    
         <!--
         <button>download on the <br/>App Store</button>
         <button>Get it on <br/>Google Play</button>
