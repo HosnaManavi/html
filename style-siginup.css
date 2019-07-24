@@ -127,3 +127,16 @@ chon yki az icon ha tu tag " i " nabud tuye tag e " span " bud
     text-align: center;
     font-weight: 600;
 }
+@media only screen and(max-width:450px)
+
+{
+    body{
+        background-color: #3897f0;
+    }
+    .p1 {
+            display: none;
+    }
+    .small-d{
+        display: none;
+    }
+}
