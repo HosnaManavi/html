@@ -37,29 +37,53 @@
     text-align: center;
 
 }
+
 /* man tlash kardam ke input ha ro vacate safhe biyaram vali hr chi margin atuo be class in1
 dadam in etefagh nayoftad =======> har kodom az input ham be khater inke block bshan dakhel yek div bodan
 ===> baraye hame ye div ha yek class moshbeh tarif kardam va bad be d1 margin auto va width dadam 
 ta vasat safhe beyan =====>  ta in ja karam dorost shod yani hame div ha vasate safhe oftadan ===>
-moskelam in jast ke khod inpute ham vasate div ha nista ??? ====>*/
+moskelam in jast ke khod inpute ham vasate div ha nista ??? ==== :) dorost shod :) bayad width div ro
+ andaze ye width input mikardam ... ta ba vasat oftadan div ... input ham vasat biofte. 
+>*/
+
 .d1 {
     margin: auto;
     width: 285;
-   background-color: chocolate;
+/*background-color: chocolate;*/
+
+/* position relative dadam */
    position: relative;
  }
+
+.d1 i{
+    position: absolute;
+    left: 8px;
+    top: 12px;
+    font-size: 20px;
+}
+
+/* inja hm besh gftm elemente " span " k dakhele elementi ba class e " d1 " darim ro bgir
+chon yki az icon ha tu tag " i " nabud tuye tag e " span " bud
+ */
+.d1 span{
+    position: absolute;
+    left: 8px;
+    top: 12px;
+    font-size: 20px;
+}
 
 .in1{
     
     margin: 4px auto;
     width: 251px;
     height: 36px; 
-    padding: 9px 0px 7px 8px;
+    padding: 9px 0px 7px 30px;
     border-radius: 5px;
     border: 0.5px solid lightgray;
     background: #fafafa;
     font-size: 14px;
     font-family: -apple-system,BlinkMacSystemFont,"Segoe UI",Roboto,Helvetica,Arial,sans-serif;
+    padding-left: 33px;
 
 }
 
